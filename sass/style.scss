@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
 $bg-color: #696969;
 $bg-contact:#D3D3D3;
 $btn-color: #1E90FF;
@@ -8,6 +9,7 @@ $btn-color: #1E90FF;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -187,7 +189,7 @@ header {
 
         .title {
             margin-bottom: 20px;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
         }
 
