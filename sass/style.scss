@@ -1,0 +1,259 @@
+$bg-color: #696969;
+$bg-contact:#D3D3D3;
+$btn-color: #1E90FF;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white
+}
+
+#icon {
+    display: none;
+    font-size: 25px;
+}
+
+header {
+    height: 500px;
+    background: url("../images/think-code.png") no-repeat;
+    padding: 30px;
+
+    .header-div {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-tags {
+            display: flex;
+
+            ul {
+                list-style: none;
+                display: flex;
+            }
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.my-info {
+    margin: 30px;
+    margin-top: 60px;
+    display: flex;
+    height: 650px;
+
+    .info-text-skills {
+        margin-top: 10px;
+        padding-right: 50px;
+        text-align: center;
+        font-size: 20px;
+        width: 700px;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .my-skills {
+            margin-top: 60px;
+
+            img {
+                width: 50px;
+                margin-right: 30px;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+
+        }
+    }
+}
+
+.pictures {
+    width: 690px;
+    overflow: hidden;
+
+    figure {
+        width: 500%;
+        position: relative;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite
+    }
+
+    img {
+        width: 20%;
+        float: left;
+    }
+
+    @keyframes slider {
+        0% {
+            left: 0
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%
+        }
+
+        45% {
+            left: -100%
+        }
+
+        50% {
+            left: -200%
+        }
+
+        70% {
+            left: -200%
+        }
+
+        75% {
+            left: -300%
+        }
+
+        95% {
+            left: -300%
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+}
+
+
+.box-house {
+    margin: 30px;
+    margin-top: 70px;
+
+    .project-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .boxes {
+        display: flex;
+
+        .box1 {
+            width: 25%;
+            border: 2px solid $bg-color;
+            padding: 20px;
+            box-shadow: 3px 4px 3px lighten($bg-color, 2%);
+        }
+
+        .box2 {
+            width: 25%;
+            border: 2px solid $bg-color;
+            margin-left: 15px;
+            padding: 20px;
+            box-shadow: 3px 4px 3px lighten($bg-color, 2%);
+        }
+
+        .box3 {
+            width: 25%;
+            border: 2px solid $bg-color;
+            margin-left: 15px;
+            padding: 20px;
+            box-shadow: 3px 4px 3px lighten($bg-color, 2%);
+        }
+
+        .box4 {
+            width: 25%;
+            border: 2px solid $bg-color;
+            margin-left: 15px;
+            padding: 20px;
+            box-shadow: 3px 4px 3px lighten($bg-color, 2%);
+        }
+
+        .title {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 7px;
+            background: $btn-color;
+            border: none;
+            border-radius: 8px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            &:hover {
+                background: lighten($btn-color, 15%);
+            }
+        }
+    }
+}
+
+#contact {
+    background: lighten($bg-contact, 13%);
+    padding: 5px;
+}
+
+.contacts {
+    margin: 30px;
+    margin-top: 70px;
+    text-align: center;
+
+
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 50px;
+
+        p {
+            text-align: center;
+            margin-left: 70px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            margin-left: 70px;
+
+            img {
+                width: 50px;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background-color: lighten($bg-color, 50%);
+    font-size: 20px;
+}
+
+@import "mobile"
